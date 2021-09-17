@@ -51,7 +51,7 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-.evento {
+.event {
   border: 2px solid gray;
   border-radius: 4px;
 }
@@ -490,33 +490,33 @@ section {
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# About
+# proxEvento
 --------------------------------------------------------------*/
-.about .content {
+.proxEvento .content {
   background-color: #f6f9ff;
   padding: 40px;
   min-width: 50vw;
 }
 
-.about h3 {
+.proxEvento h3 {
   font-size: 14px;
   font-weight: 700;
   color: #1a4d21;
   text-transform: uppercase;
 }
 
-.about h2 {
+.proxEvento h2 {
   font-size: 24px;
   font-weight: 700;
   color: #2d2e30;
 }
 
-.about p {
+.proxEvento p {
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
 
-.about .btn-read-more {
+.proxEvento .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -527,22 +527,24 @@ section {
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
-.about .btn-read-more span {
+.proxEvento .btn-read-more span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .btn-read-more i {
+.proxEvento .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
+.proxEvento .btn-read-more:hover i {
   transform: translateX(5px);
 }
+
+
 
 /*--------------------------------------------------------------
 # Values
@@ -552,6 +554,7 @@ section {
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   height: 100%;
 }
+
 
 .data {
   bottom: -20px;
@@ -601,9 +604,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# evento
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+.evento #evento-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -613,7 +616,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.evento #evento-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -627,17 +630,17 @@ section {
   border: 1px solid #fff;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.evento #evento-flters li:hover,
+.evento #evento-flters li.filter-active {
   color: #1d1d1f;
   border-color: #165520;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.evento #evento-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.evento .evento-wrap {
   transition: 0.3s;
   position: relative;
   border-radius: 12px;
@@ -646,7 +649,7 @@ section {
   background: rgba(255, 255, 255, 0.75);
 }
 
-.portfolio .portfolio-wrap::before {
+.evento .evento-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.75);
   border: 1px solid #c4c4c4;
@@ -661,11 +664,11 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap img {
+.evento .evento-wrap img {
   transition: 1s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.evento .evento-wrap .evento-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -681,7 +684,7 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+.evento .evento-wrap .evento-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -695,7 +698,7 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.evento .evento-wrap .evento-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -709,18 +712,18 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.evento .evento-wrap .evento-info h4 {
   font-size: 20px;
   color: #181a18;
   font-weight: 700;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.evento .evento-wrap .evento-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.evento .evento-wrap .evento-links a {
   color: #fff;
   background: #4154f1;
   margin: 10px 2px;
@@ -733,20 +736,20 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a i {
+.evento .evento-wrap .evento-links a i {
   font-size: 24px;
   line-height: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.evento .evento-wrap .evento-links a:hover {
   background: #5969f3;
 }
 
-.portfolio .portfolio-wrap:hover img {
+.evento .evento-wrap:hover img {
   /* transform: scale(1.1); */
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.evento .evento-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -754,38 +757,38 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.evento .evento-wrap:hover .evento-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.evento .evento-wrap:hover .evento-info::before {
   top: 15px;
   left: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.evento .evento-wrap:hover .evento-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# evento Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.evento-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.evento-details .evento-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.evento-details .evento-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.evento-details
+  .evento-details-slider
   .swiper-pagination
   .swiper-pagination-bullet {
   width: 12px;
@@ -795,19 +798,19 @@ section {
   border: 1px solid #4154f1;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.evento-details
+  .evento-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
   background-color: #4154f1;
 }
 
-.portfolio-details .portfolio-info {
+.evento-details .evento-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.evento-details .evento-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -815,102 +818,38 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.evento-details .evento-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.evento-details .evento-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.evento-details .evento-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.evento-details .evento-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.evento-details .evento-description p {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-  background: #fff;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
-}
 
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4154f1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
-}
-
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
 
 @media (max-width: 1199px) {
+
+  .disapear-mobile{
+    display: none;
+  }
+
   .testimonials .swiper-slide-active {
     opacity: 1;
   }
