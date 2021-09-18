@@ -195,23 +195,23 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let eventoContainer = select('.evento-container');
+    if (eventoContainer) {
+      let eventoIsotope = new Isotope(eventoContainer, {
+        itemSelector: '.evento-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let eventoFilters = select('#evento-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#evento-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        eventoFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        eventoIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
         aos_init();
@@ -221,16 +221,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate evento lightbox 
    */
-  const portfolioLightbox = GLightbox({
+  const eventoLightbox = GLightbox({
     selector: '.portfokio-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * evento details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.evento-details-slider', {
     speed: 400,
     autoplay: {
       delay: 5000,
